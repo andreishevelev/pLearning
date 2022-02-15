@@ -1,6 +1,5 @@
 const { expect } = require("chai");
-const { Builder, By, Key, until } = require("selenium-webdriver");
-const { addConsoleHandler } = require("selenium-webdriver/lib/logging");
+const { Builder, By, until } = require("selenium-webdriver");
 
 // Pre-conditions
 const baseUrl = 'https://www.perfectionlearning.com';
@@ -112,11 +111,9 @@ describe('Wish list', () => {
             await driver.sleep(2000);
             let actualTitle = await driver.getTitle();
             expect(actualTitle).not.equal('404 Not Found | Perfection Learning');
-
         }
 
         finally {
-
             //await driver.sleep(10000);
             await driver.quit();
         }
