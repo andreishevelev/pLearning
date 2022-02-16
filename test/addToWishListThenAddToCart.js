@@ -70,13 +70,13 @@ describe('Wish list', () => {
             // click Sign In button
             await click(signInButtonLocator);
 
-            // click Middle School List
+            // click Elementary School List
             await click(eSchoolMenuLocator);
 
-            // select Classroom Libraries item
+            // select Language Arts item
             await click(eSchoolUlLi1Locator);
 
-            // click second element in Elementary School Menu
+            // click third element in Elementary School Menu
             await click(langArtsLi3Locator);
 
             // click Add to With List first item
@@ -101,7 +101,7 @@ describe('Wish list', () => {
             // enter qty 25
             await sendKeys(qtyLocator, '25');
 
-            // wait 1 second
+            // wait 2 seconds
             await driver.sleep(2000);
 
             // click add to card
